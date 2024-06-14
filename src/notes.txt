@@ -1,0 +1,6 @@
+*createContext = it is like store (createStore)
+*provider = yo provider le store(i.e context) ko value component haru
+            lai provide garxa
+*consumer = -the component that takes data(i.e state) from provider 
+            -consumer vitra function lekhni ho ani that function
+            takes argument that has value       
