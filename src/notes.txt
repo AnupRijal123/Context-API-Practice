@@ -4,3 +4,8 @@
 *consumer = -the component that takes data(i.e state) from provider 
             -consumer vitra function lekhni ho ani that function
             takes argument that has value       
+
+*useContext = -yesle context lai use garxa ani context ko value
+            return garxa
+            -  const a = useContext(Examplecontext)
+            -Examplecontext ko value ma lekehko kura a ma ayera basxa

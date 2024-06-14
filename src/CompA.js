@@ -1,33 +1,18 @@
 import { FirstName, LastName } from './App';
+import { useContext } from 'react';
 function CompA() {
+    const fname = useContext(FirstName);
+    const lname = useContext(LastName);
     return (
         <div>
-            {/* <FirstName.Consumer>
-                {(fname) => {
-                    return <h1>this is firstname: {fname}</h1>
-                }}
-            </FirstName.Consumer>
-            <LastName.Consumer>
-                {(lname) => {
-                    return <h1>this is lastname: {lname}</h1>
-                }}
-            </LastName.Consumer> */}
-            <FirstName.Consumer>
-                {(fname) => {
-                    return (
-                        <LastName.Consumer>
-                            {(lname) => {
-                                return <h1>My name is {fname} {lname}</h1>
-                            }}
-                        </LastName.Consumer>
-                    )
-                }}
-            </FirstName.Consumer>
+            <h1>My name is {fname} {lname}</h1>
         </div>
 
     )
 }
 export default CompA;
 
-//App.js ma FirstName ma lekheko value fname ma ayera basxa
-//inside consumer there should only be function i.e.<Consumer>function</Consumer>
+//App.js ma FirstName ma lekheko value eta fname ma ayera basxa
+//App.js ma LastName ma lekheko value eta lname ma ayera basxa
+
+
