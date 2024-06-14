@@ -3,12 +3,15 @@ import CompA from './CompA';
 import { createContext } from 'react';
 
 const FirstName = createContext();
+const LastName = createContext();
 
 function App() {
   return (
     <div className="App">
       <FirstName.Provider value={'Ram'}>
-        <CompA />
+        <LastName.Provider value="Thapa">
+          <CompA />
+        </LastName.Provider>
       </FirstName.Provider>
 
     </div>
@@ -16,4 +19,4 @@ function App() {
 }
 
 export default App;
-export { FirstName };
+export { FirstName, LastName };
